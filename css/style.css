@@ -261,7 +261,7 @@ main {
 aside {
   width: 272px;  
 }
-  
+
 .post-size-picture {
   width: 100%;
 }
@@ -371,7 +371,11 @@ h2 > a {
 .post-preview {
   margin-left: 20px;
 }
-  
+
+.aside-picture {
+  width: 70px;
+}
+
 .aside-size-picture {
   width: 70px; 
 }
@@ -524,11 +528,12 @@ h2 > a {
   padding-top: 18px;
 }
   
-sup {
+.sup {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   font-weight: bold; 
   color: #b59f5b; 
+  vertical-align: super;
 }
 
 .shop {
@@ -738,8 +743,7 @@ footer {
 
 .popup-box {
   box-sizing: border-box;
-  width: 390px;
-  padding-top: 55px;
+  padding-top: 50px;
   position: relative;
   z-index: 2;
   background-color: #ffffff;
@@ -760,8 +764,7 @@ footer {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 13px;
   width: 330px; 
-
-  margin: 30px auto 55px auto;
+  margin: 30px 30px 50px 30px;
 }
 
 .form-row {
@@ -778,7 +781,6 @@ footer {
 
 .form-hint {
   display: block;
-
   margin-bottom: 10px;
 }  
 
@@ -805,6 +807,11 @@ footer {
   cursor: pointer;
 }
  
+.select:focus {
+  border: 1px solid;
+  border-color: #b59f5b;
+}
+
 .radio-group:nth-of-type(n+2) {
   margin-left: 15px;
 }
@@ -842,11 +849,18 @@ footer {
   background-size: 20px;
 }
 
+.radio-group:hover {
+  cursor: pointer;
+}
+
 .radio:checked ~ .radio-group-text::before {
 	background-image: url("../svg/form-circle.svg");
 }
 
 .textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+
   box-sizing: border-box;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 13px;
@@ -857,37 +871,21 @@ footer {
   min-height: 130px;
   max-height: 130px;
   resize: none;
-  margin-top: 12px;
+  margin-top: 10px;
 }  
-  
-.select:focus {
+
+.textarea:focus {
   border: 1px solid;
   border-color: #b59f5b;
 }
- 
+  
 .popup__close {
-  font-size: 20px;
+  /*font-size: 20px;*/
   width: 1em;
   height: 1em;
   position: absolute;
   top: -1.5em;
   right: 0;
   cursor: pointer;
-  opacity: 0.6;
-  z-index: 10;
+  background-color: transparent;
 }
-
-.popup__close::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: url(../svg/form-x.svg);
-  background-repeat: no-repeat;
-  background-position: right 5px center;
-  background-size: 8px 18px;
-  z-index: 9;
-}
-
