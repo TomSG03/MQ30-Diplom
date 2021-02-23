@@ -785,8 +785,8 @@ footer {
 }  
 
 .select {
-	-webkit-appearance: none;
-	-moz-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 
   background-image: url(../svg/form-arrows.svg);
   background-repeat: no-repeat;
@@ -828,11 +828,6 @@ footer {
   width: 1px;
 }
 
-.radio-group {
-  display: inline-block;
-  font-size: 13px;
-}
-
 .radio-group-text::before {
   margin-right: 4px;
 
@@ -854,12 +849,12 @@ footer {
 }
 
 .radio:checked ~ .radio-group-text::before {
-	background-image: url("../svg/form-circle.svg");
+  background-image: url("../svg/form-circle.svg");
 }
 
 .textarea {
-	-webkit-appearance: none;
-	-moz-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 
   box-sizing: border-box;
   font-family: "Open Sans", Arial, sans-serif;
