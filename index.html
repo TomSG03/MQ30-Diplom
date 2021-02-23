@@ -105,13 +105,11 @@
         </div>
       </div>
     </div>
-   </div>
   </section>
-
   <div class="wrapper">
     <main>
       <article class="post">
-        <picture>
+        <picture class="post-picture"> 
           <img src="images/last-post1.jpg" class="post-size-picture" alt="Места где стоит побывать">
         </picture>
         <div class="post-frame">
@@ -131,7 +129,7 @@
         </div>
       </article>
       <article class="post">
-        <picture>
+        <picture class="post-picture">
           <img src="images/last-post2.jpg" class="post-size-picture" alt="Йога для начинающих">
         </picture>
         <div class="post-frame">
@@ -151,7 +149,7 @@
         </div>
       </article>
       <article class="post">
-        <picture>
+        <picture class="post-picture">
           <img src="images/last-post3.jpg" class="post-size-picture" alt="Музыкальные фестивали">
         </picture>
         <div class="post-frame">
@@ -168,7 +166,7 @@
         </div>
       </article>
       <article class="post">
-        <picture>
+        <picture class="post-picture">
           <img src="images/last-post4.jpg" class="post-size-picture" alt="Кулинария">
         </picture>
         <div class="post-frame">
@@ -188,7 +186,7 @@
         </div>
       </article>
       <article class="post">
-        <picture>
+        <picture class="post-picture">
           <img src="images/last-post5.jpg" class="post-size-picture" alt="Подушки и интерьер">
         </picture>
         <div class="post-frame">
@@ -211,7 +209,7 @@
         </div>
       </article>
       <article class="post">
-        <picture>
+        <picture class="post-picture">
           <img src="images/last-post6.jpg" class="post-size-picture" alt="Путешествие в горы">
         </picture>
         <div class="post-frame">
@@ -231,7 +229,7 @@
         </div>
       </article>
       <article class="post">
-        <picture>
+        <picture class="post-picture">
           <img src="images/last-post5.jpg" class="post-size-picture" alt="Подушки и интерьер">
         </picture>
         <div class="post-frame">
@@ -258,7 +256,7 @@
       <section class="aside-block-item">
         <h3 class="block-item-title">Новые посты</h3>
         <div class="post-item">
-          <picture>
+          <picture class="aside-picture">
             <img src="images/2.jpg" class="aside-size-picture" alt="">
           </picture>
           <div class="post-preview">
@@ -267,7 +265,7 @@
           </div>
         </div>
         <div class="post-item">
-          <picture>
+          <picture class="aside-picture">
             <img src="images/151.jpg" class="aside-post-preview" alt="">
           </picture>
           <div class="post-preview">
@@ -276,7 +274,7 @@
           </div>
         </div>
         <div class="post-item">
-          <picture>
+          <picture class="aside-picture">
             <img src="images/45.jpg" class="aside-size-picture" alt="">
           </picture>
           <div class="post-preview">
@@ -285,7 +283,7 @@
           </div>
         </div>
         <div class="post-item">
-          <picture>
+          <picture class="aside-picture">
             <img src="images/501.jpg" class="aside-size-picture" alt="">
           </picture>
           <div class="post-preview">
@@ -294,7 +292,7 @@
           </div>
         </div>
         <div class="post-item">
-          <picture>
+          <picture class="aside-picture">
             <img src="images/7.jpg" class="aside-size-picture" alt="">
           </picture>
           <div class="post-preview">
@@ -308,8 +306,9 @@
           <form>
             <label class="search-group">
               <input class="field" name="query" placeholder="Найти..." required>
+              <span class="visually-hidden" >Поле ввода поиска на сайте</span>
             </label>
-            <button class="button"><span class="visually-hidden">Поиск на сайте</span></button>
+            <button class="button"><span class="visually-hidden">Кнопка поиска на сайте</span></button>
           </form>
         </div>
       </section>
@@ -318,6 +317,7 @@
         <form class="subscribsions">
           <label class="subscribsion-group">
             <input type="email" class="subscribsion-field" name="query" placeholder="Ваш email адрес" required>
+            <span class="visually-hidden" >Поле ввода email</span>
           </label>
           <button class="subscribsion-button">Подписатся</button>
         </form>
@@ -338,22 +338,20 @@
       <section class="aside-block-item">
         <h3 class="block-item-title">Темы</h3>
         <ul class="categories-list">
-          <li class="categories-list-item"><a href="#0">Красота</a><sup>12</sup></li>
-          <li class="categories-list-item"><a href="#0">Здоровье</a><sup>4</sup></li>
-          <li class="categories-list-item"><a href="#0">Образ жизни</a><sup>145</sup></li>
-          <li class="categories-list-item"><a href="#0">Музыка</a><sup>12</sup></li>
-          <li class="categories-list-item"><a href="#0">Спорт</a><sup>28</sup></li>
-          <li class="categories-list-item"><a href="#0">Йога</a><sup>8</sup></li>
+          <li class="categories-list-item"><a href="#0">Красота</a><span class="sup">12</span></li>
+          <li class="categories-list-item"><a href="#0">Здоровье</a><span class="sup">4</span></li>
+          <li class="categories-list-item"><a href="#0">Образ жизни</a><span class="sup">145</span></li>
+          <li class="categories-list-item"><a href="#0">Музыка</a><span class="sup">12</span></li>
+          <li class="categories-list-item"><a href="#0">Спорт</a><span class="sup">28</span></li>
+          <li class="categories-list-item"><a href="#0">Йога</a><span class="sup">8</span></li>
         </ul>
       </section>
     </aside>
   </div>
-
   <section class="shop">
     <h2 class="shop-title">Наши изделия</h2>
     <div class="shop-block">
       <article class="shop-product">
-
         <div class="picture">
           <picture>
             <source srcset="images/shop-item-desk1.jpg" media="(min-width: 1201px)">
@@ -362,10 +360,10 @@
             <img class="product-picture" src="images/shop-item-desk1.jpg" alt="Подушки на диван">
           </picture>
         </div>
-
         <div class="product-frame">
           <h2 class="product-title">Подушки на диван</h2>
-          <p class="product-text">Набор из двух подушек с модными принтами. Видео о создании <a class="product-link" href="#0">здесь</a></p>
+          <p class="product-text">Набор из двух подушек с модными принтами. Видео о создании <a class="product-link"
+              href="#0">здесь</a></p>
           <div class="product-footer">
             <div class="product-prices">
               <span class="product-price product-old-price">1000 ₽</span>
@@ -375,7 +373,6 @@
           </div>
         </div>
       </article>
-
       <article class="shop-product">
         <div class="picture">
           <picture class="picture">
@@ -385,10 +382,10 @@
             <img class="product-picture" src="images/shop-item-desk1.jpg" alt="Подушки на диван">
           </picture>
         </div>
-
         <div class="product-frame">
           <h2 class="product-title">Кукла «Зайчик»</h2>
-          <p class="product-text">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a class="product-link" href="#0">весенняя серия постов</a> в блоге и несколько подкастов.</p>
+          <p class="product-text">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a class="product-link"
+              href="#0">весенняя серия постов</a> в блоге и несколько подкастов.</p>
           <div class="product-footer">
             <div class="product-prices">
               <span class="product-price product-old-price"> </span>
@@ -398,7 +395,6 @@
           </div>
         </div>
       </article>
-
       <article class="shop-product">
         <div class="picture">
           <picture class="picture">
@@ -408,10 +404,10 @@
             <img class="product-picture" src="images/shop-item-desk1.jpg" alt="Подушки на диван">
           </picture>
         </div>
-
         <div class="product-frame">
           <h2 class="product-title">Шестиугольная рамка</h2>
-          <p class="product-text">Необычная рамка для украшения дома из видео  <a class="product-link" href="#0">«Как сделать рамку из подручных средств за 30 минут»</a></p>
+          <p class="product-text">Необычная рамка для украшения дома из видео <a class="product-link" href="#0">«Как сделать
+              рамку из подручных средств за 30 минут»</a></p>
           <div class="product-footer">
             <div class="product-prices">
               <span class="product-price product-old-price">500 ₽</span>
@@ -421,11 +417,8 @@
           </div>
         </div>
       </article>
-
+    </div>
   </section>
-
-
-
   <footer class="footer">
     <address class="articles-socials">
       <ul class="socials">
@@ -461,7 +454,6 @@
       <a href="#0">Copyright © 2009–2019 City Blog LLC.</a>
     </div>
   </footer>
-
   <div class="popup hidden">
     <div class="popup-box">
       <h2 class="popup-title">Ваш фидбек</h2>
@@ -500,17 +492,14 @@
         </div>
       </form>
       <button class="popup__close" type="button">
+        <picture>
+          <img src="svg/form-x.svg" alt="Закрыть окно">
+        </picture>
         <span class="visually-hidden">Закрыть окно</span>
       </button>
-    
-
     </div>
-   </div>
-
-
-
+  </div>
 </body>
-
 </html>
 
 
